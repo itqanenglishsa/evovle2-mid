@@ -77,7 +77,7 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="text-[#fcded6] font-medium hidden sm:inline">Cambridge Evolve 2 Midterm Test Bank</span>
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-white/80 text-[11px]">إتقان الإنجليزية: لغة كاملة.. في تطبيق واحد</span>
+            <span className="text-white/80 text-[11px]"></span>
           </div>
         </div>
       </div>
