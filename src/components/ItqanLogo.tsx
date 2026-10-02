@@ -11,7 +11,6 @@ export const ItqanLogo: React.FC<ItqanLogoProps> = ({
   className = '',
   size = 'md',
 }) => {
-  // إعدادات الارتفاع المتوافقة مع الأحجام المختلفة
   const sizeClasses = {
     sm: 'h-8',
     md: 'h-10 sm:h-11',
@@ -19,8 +18,8 @@ export const ItqanLogo: React.FC<ItqanLogoProps> = ({
     xl: 'h-20'
   }[size];
 
-  // استخدام import.meta.env.BASE_URL لضمان عمل المسار على GitHub Pages أو أي استضافة فرعية/رئيسية
-  const logoSrc = `${import.meta.env.BASE_URL}logo.png`.replace(/\/+/g, '/');
+  // المسار المباشر من مجلد public
+  const logoSrc = '/logo.png';
 
   return (
     <div className={`inline-flex items-center gap-2.5 select-none ${className}`}>
