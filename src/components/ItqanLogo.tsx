@@ -1,10 +1,11 @@
 import React from 'react';
+import logoImage from '../assets/logo.png'; // تأكد أن ملف logo.png موجود داخل مجلد src/assets/
 
 interface ItqanLogoProps {
   className?: string;
   variant?: 'color' | 'white' | 'dark';
   size?: 'sm' | 'md' | 'lg' | 'xl';
-  showSubtitle?: boolean; // تم الاحتفاظ بها لتتوافق مع باقي الملفات في حال تم استدعاؤها
+  showSubtitle?: boolean; // تم الاحتفاظ بها لتتوافق مع بقية الملفات في مشروعك
 }
 
 export const ItqanLogo: React.FC<ItqanLogoProps> = ({
@@ -22,7 +23,7 @@ export const ItqanLogo: React.FC<ItqanLogoProps> = ({
   return (
     <div className={`inline-flex items-center gap-2.5 select-none ${className}`}>
       <img 
-        src="/logo.png" 
+        src={logoImage} 
         alt="شعار إتقان الإنجليزية - Itqan English" 
         className={`${sizeClasses} w-auto shrink-0 object-contain`} 
       />
