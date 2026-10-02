@@ -1,0 +1,8 @@
+{
+  "name": "Remix Evolve 2 Saudi Universities Midterm Exam",
+  "description": "Interactive midterm examination platform for Cambridge Evolve 2 across Saudi Universities, featuring 10 diverse exam models with official question patterns, audio tracks, vocabulary, grammar, and reading comprehension.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
