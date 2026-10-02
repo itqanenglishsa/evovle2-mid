@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../logo.png';
 
 interface ItqanLogoProps {
   className?: string;
@@ -18,14 +19,12 @@ export const ItqanLogo: React.FC<ItqanLogoProps> = ({
     xl: 'h-20',
   }[size];
 
-  const logoSrc = '/logo.png';
-
   return (
     <div
       className={'inline-flex items-center gap-2.5 select-none ' + className}
     >
       <img
-        src={logoSrc}
+        src={logo}
         alt="Itqan English"
         className={sizeClasses + ' w-auto object-contain'}
       />
