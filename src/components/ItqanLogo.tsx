@@ -15,18 +15,19 @@ export const ItqanLogo: React.FC<ItqanLogoProps> = ({
     sm: 'h-8',
     md: 'h-10 sm:h-11',
     lg: 'h-14',
-    xl: 'h-20'
+    xl: 'h-20',
   }[size];
 
-  // استخدام مسار يبدأ بـ نقطة لتحديد مكان الصورة في الجذر الرئيسي بشكل صحيح
-  const logoSrc = './logo.png';
+  const logoSrc = '/logo.png';
 
   return (
-    <div className={`inline-flex items-center gap-2.5 select-none ${className}`}>
-      <img 
-        src={logoSrc} 
-        alt="شعار إتقان الإنجليزية - Itqan English" 
-        className={`${sizeClasses} w-auto shrink-0 object-contain`} 
+    <div
+      className={'inline-flex items-center gap-2.5 select-none ' + className}
+    >
+      <img
+        src={logoSrc}
+        alt="Itqan English"
+        className={sizeClasses + ' w-auto object-contain'}
       />
     </div>
   );
